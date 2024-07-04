@@ -1,0 +1,116 @@
+/*____________________ESTILOS PARA EL LOGIN/INDEX____________________*/
+/* Estilo para el título Cuerpo, Fuente y Fondo de la Página */
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Playwrite AU VIC", cursive;
+    background: url('../img/fondo_login.jpg') no-repeat center center fixed;
+    background-size: 80%;
+    background-position: center;
+    color: #000000;
+}
+
+/* Estilo para el título "Inventario BRIAD" */
+.main-title {
+    text-align: center;
+    font-size: 250%;
+    margin-top: 5%;
+    color: #333333;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Añade un efecto de sombra al texto */
+}
+
+/* Estilo para el título "Iniciar Sesión" */
+h6.title {
+    font-size: 1.5em;
+    color: #333333;
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el contenedor principal */
+.main-container {
+    height: calc(50%);
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    background-color: rgba(255, 255, 255, 0.87);
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 40px rgba(33, 131, 9, 0.719);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Estilos para los labels y los inputs */
+.field {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.label {
+    font-size: 1em;
+    color: #333333;
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.user-container, .password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin: 0.5em 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-size: 16px;
+}
+
+.mostrar_contraseña {
+    color: #24850c;
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.mostrar_contraseña .fas {
+    width: 20px;
+    height: 20px;
+}
+
+/* Estilo para el botón de Iniciar Sesión */
+.button_IS {
+    background-color: #00a025bd;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.button_IS:hover {
+    background-color: #1e7e34;
+}
+
+

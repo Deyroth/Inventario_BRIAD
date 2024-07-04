@@ -1,0 +1,131 @@
+/*____________________ESTILOS PARA EL HOME____________________*/
+/* Estilo para el título Cuerpo, Fuente y Fondo de la Página */
+.navbar {
+    background-color: #000000; /* Color de fondo de la barra de navegación */
+    padding: 10px 20px;
+}
+
+.navbar-brand .navbar-item img {
+    max-height: 50px; /* Ajusta el tamaño máximo de la imagen del logo */
+}
+
+.navbar-burger {
+    cursor: pointer;
+    color: white; /* Color de las barras del menú */
+    display: none; /* Ocultar en pantallas grandes */
+}
+
+.navbar-burger span {
+    display: block;
+    height: 2px;
+    width: 18px;
+    background-color: white; /* Color de las barras del menú */
+    margin: 4px;
+}
+
+/* Navbar menu styles */
+.navbar-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-start, .navbar-end {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-item {
+    color: white;
+    padding: 10px 15px;
+}
+
+.navbar-item:hover {
+    background-color: #575757; /* Color de fondo cuando se pasa el ratón por encima */
+}
+
+.navbar-dropdown {
+    background-color: #333;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    display: none;
+    z-index: 1;
+    margin-top: 10px;
+}
+
+.navbar-dropdown .navbar-item {
+    color: white;
+}
+
+.navbar-dropdown .navbar-item:hover {
+    background-color: #575757;
+}
+
+.navbar-item.has-dropdown:hover .navbar-dropdown {
+    display: block;
+}
+
+/* Navbar end styles */
+.navbar-end .buttons .button {
+    margin-left: 10px;
+}
+
+.button.is-primary {
+    background-color: #007BFF;
+    border-color: #007BFF;
+    color: white;
+}
+
+.button.is-primary:hover {
+    background-color: #0056b3;
+}
+
+.button.is-link {
+    background-color: #5A6268;
+    border-color: #5A6268;
+    color: white;
+}
+
+.button.is-link:hover {
+    background-color: #3c3e42;
+}
+
+/* Estilo para el botón de Logout */
+.button_logout {
+    background-color: #00a025bd; /* Cambiar color */
+    color: #ffffff;
+    padding: 0.5%;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 95%;
+    transition: background-color 0.3s;
+}
+
+.button_logout:hover {
+    background-color: #1e7e34; /* Cambiar color al hacer hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .navbar-menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-burger {
+        display: block;
+    }
+
+    .navbar-menu.is-active {
+        display: flex;
+    }
+
+    .navbar-dropdown {
+        position: static;
+        box-shadow: none;
+        margin-top: 0;
+    }
+}
