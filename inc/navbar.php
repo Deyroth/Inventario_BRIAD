@@ -4,13 +4,13 @@
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barra de Navegación</title>
-    <link rel="stylesheet" href="./css/style_home.css">
+    <link rel="stylesheet" href="path_to_your_css/style_index-home.css">
 </head>
 <body>
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <a class="navbar-item" href="index.php?vista=home">
-                <img src="./img/Logo_Ejercito_Nacional.png " width="50" height="50">
+            <a class="navbar-img" href="index.php?vista=home">
+                <img src="./img/Logo_Ejercito_Nacional.png">
             </a>
 
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -52,15 +52,13 @@
             </div>
 
             <div class="navbar-end">
-                <div class="navbar-item">
-                    <div class="buttons">
-                        <a href="index.php?vista=user_update&user_id_up=<?php echo $_SESSION['id']; ?>" class="button is-primary is-rounded">
-                            Mi cuenta
-                        </a>
-                        <a href="index.php?vista=logout" class="button_logout is-link is-rounded">
-                            Salir
-                        </a>
-                    </div>
+                <div class="buttons">
+                    <a href="index.php?vista=user_update&user_id_up=<?php echo $_SESSION['id']; ?>" class="button_user-acount is-primary is-rounded">
+                        Mi cuenta
+                    </a>
+                    <a href="index.php?vista=logout" class="button_logout is-link is-rounded">
+                        Salir
+                    </a>
                 </div>
             </div>
         </div>

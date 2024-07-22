@@ -1,0 +1,106 @@
+/*_________________DISEÑO DE LA BARRA DE NAVEGACIÓN_________________*/
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Playwrite AU VIC", cursive;
+    background: url('../img/fondo_img.jpg') no-repeat center center fixed;
+    background-size: 80%;
+    color: #000000;
+}
+
+.navbar {
+    background-color: #000000; /* Color de fondo de la barra de navegación */
+    padding: 1% 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand .navbar-img img {
+    max-height: 100%;
+    display: block; /* Cambiado de flex a block para evitar comportamiento inesperado */
+    margin: 0; /* Elimina cualquier margen */
+    padding: 0; /* Elimina cualquier padding */
+    max-width: 100px; /* Asegura que la imagen no exceda el tamaño del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.navbar-start {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.navbar-end {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navbar-item {
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.navbar-item:hover {
+    background-color: #575757; /* Color de fondo cuando se pasa el ratón por encima */
+}
+
+.navbar-dropdown {
+    background-color: #333;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    display: none;
+    z-index: 1;
+    margin-top: 10px;
+    flex-direction: column; /* Asegura que los elementos se alineen de manera vertical */
+}
+
+.navbar-dropdown .navbar-item {
+    color: white;
+    padding: 10px 15px; /* Asegura que los elementos tengan suficiente espacio */
+}
+
+.navbar-dropdown .navbar-item:hover {
+    background-color: #575757;
+}
+
+.navbar-item.has-dropdown:hover .navbar-dropdown {
+    display: flex; /* Cambia display a flex para soportar flex-direction */
+    flex-direction: column; /* Asegura que los elementos se alineen de manera vertical */
+}
+
+/* Estilo para los botones */
+.button_logout, .button_user-acount {
+    background-color: #8A084F; /* Combina con el color primario */
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
+}
+
+.button_logout:hover, .button_user-acount:hover {
+    background-color: #6E0640; /* Color de fondo cuando se pasa el ratón por encima */
+}
